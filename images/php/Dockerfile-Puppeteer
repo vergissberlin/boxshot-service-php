@@ -1,0 +1,9 @@
+FROM alekzonder/puppeteer
+
+# Dependencies
+USER root
+RUN apt-get update &&\
+    apt-get install -y php \
+    zip unzip --no-install-recommends
+
+USER pptruser

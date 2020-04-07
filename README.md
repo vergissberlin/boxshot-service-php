@@ -22,9 +22,3 @@ bin/boxshot https://example.com
 ```
 
 You will find the screenshot in `/data/example-com.png`.
-
-## Development
-
-```bash
-bin/release
-```

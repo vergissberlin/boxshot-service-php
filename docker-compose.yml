@@ -5,8 +5,10 @@ services:
     build: ./images/php/
     command:
       - '/usr/local/bin/php boxshot.php'
+    user: '1000:1000'
     volumes:
       - ./app:/app
+      - ./data:/data
 
   php-dev:
     image: vergissberlin/boxshot-service:dev

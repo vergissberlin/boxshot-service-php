@@ -12,3 +12,4 @@
 
 # Exclude
 /app/vendor
+/app/node_modules

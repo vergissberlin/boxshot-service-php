@@ -3,7 +3,8 @@
   "description": "Service to make screenshots of boxes in webpages",
   "type": "project",
   "require": {
-    "symfony/console": "^5.0"
+    "symfony/console": "^5.0",
+    "spatie/browsershot": "^3.35"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.1"
