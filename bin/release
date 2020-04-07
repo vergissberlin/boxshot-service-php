@@ -1,0 +1,3 @@
+#!/bin/bash
+docker-compose build php php-dev
+docker-compose push
