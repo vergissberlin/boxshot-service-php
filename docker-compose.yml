@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   php:
-    image: vergissberlin/boxshot-service-php
+    image: vergissberlin/boxshot-service
     build: ./images/php/
     command:
       - '/usr/local/bin/php boxshot.php'
@@ -9,10 +9,13 @@ services:
       - ./app:/app
 
   php-dev:
-    image: vergissberlin/boxshot-service-php:dev
+    image: vergissberlin/boxshot-service:dev
     build: ./images/php-dev/
     depends_on:
       - php
     command: 'composer install'
+    environment:
+      - COMPOSER_AUTH
     volumes:
       - ./app:/app
+      - ~/.composer:/root/.composer
