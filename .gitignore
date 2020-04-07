@@ -1,0 +1,14 @@
+/*
+
+!/.gitignore
+!/.dockerignore
+!/app
+!/bin
+!/composer.json
+!/composer.lock
+!/docker-compose.yml
+!/images
+!/README.md
+
+# Exclude
+/app/vendor

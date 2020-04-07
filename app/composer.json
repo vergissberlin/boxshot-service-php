@@ -1,0 +1,24 @@
+{
+  "name": "vergissberlin/boxshot-service",
+  "description": "Service to make screenshots of boxes in webpages",
+  "type": "project",
+  "require": {
+    "symfony/console": "^5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.1"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "André Lademann",
+      "email": "vergissberlin@googlemail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+        "Console\\": "src"
+    },
+    "classmap": ["src"]
+}
+}
