@@ -1,5 +1,9 @@
 # boxshot-service
 
+Service to make screenshots of boxes in webpages
+
+[![dockeri.co](https://dockeri.co/image/vergissberlin/boxshot-service)](https://hub.docker.com/r/vergissberlin/boxshot-service)
+
 ## Dependencies
 
 - [browsershot](https://github.com/spatie/browsershot) ([introduction](https://freek.dev/881-introducing-browsershot-v3-the-best-way-to-convert-html-to-pdfs-and-images))
@@ -22,3 +26,5 @@ bin/boxshot https://example.com
 ```
 
 You will find the screenshot in `/data/example-com.png`.
+
+docker run --shm-size 1G --rm -v $PWD/data:/screenshots alekzonder/puppeteer full_screenshot 'https://www.netresearch.de' 1366x768

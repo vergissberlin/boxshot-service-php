@@ -6,6 +6,7 @@
 !/bin
 !/composer.json
 !/composer.lock
+!/CONTRIBUTE.md
 !/docker-compose.yml
 !/images
 !/README.md
