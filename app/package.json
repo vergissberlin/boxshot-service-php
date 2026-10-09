@@ -4,7 +4,7 @@
   "description": "Service to make screenshots of boxes in webpages",
   "main": "index.js",
   "dependencies": {
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^25.0.0"
   },
   "devDependencies": {},
   "scripts": {
